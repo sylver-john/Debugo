@@ -35,4 +35,14 @@ func main() {
 }
 ```
 
+will print :
+``
+Var's name : a
+Var's Type : A
+Var's Kind : struct
+Exported field :
+field : Foo value : test type : string
+field : Fuu value : 10 type : int
+``
+
 It must panic if you have a unexported filed in your struct and if you dump a interface.
