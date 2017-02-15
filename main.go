@@ -1,7 +1,7 @@
 package main
 
 import(
-	"./dump"
+	"github.com/sylver-john/Debugo/dump"
 )
 type A struct {
    Foo string
