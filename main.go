@@ -17,13 +17,12 @@ func main() {
 
 func dump(a interface{}, name string) {
 	v := reflect.ValueOf(a)
-	fmt.Print("Var's name : " + name + "\n")
-	fmt.Print("Var's Type : ", reflect.TypeOf(a).Name(), "\n")
-	fmt.Print("Var's Kind : ", reflect.ValueOf(a).Kind(), "\n")
-    values := make([]interface{}, v.NumField())
+	fmt.Println("Var's name : " + name)
+	fmt.Println("Var's Type :", reflect.TypeOf(a).Name())
+	fmt.Println("Var's Kind :", reflect.ValueOf(a).Kind())
+	fmt.Println("Exported field :")
     for i := 0; i < v.NumField(); i++ {
-        values[i] = v.Field(i)
-		fmt.Print(values[i], "\n")
-		fmt.Print(reflect.TypeOf(values[i]).Name(), "\n")
+        field := v.Field(i)
+		fmt.Println("field :", reflect.TypeOf(a).Field(i).Name, "value :", field.Interface(), "type :", field.Type())
     }
 }
