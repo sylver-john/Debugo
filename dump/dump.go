@@ -3,7 +3,7 @@ package dump
 import(
 	"fmt"
 	"reflect"
-)
+)	
 
 func Dump(a interface{}, name string) {
 	v := reflect.ValueOf(a)
