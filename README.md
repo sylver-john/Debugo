@@ -6,12 +6,12 @@ A Go var dump
 - [ ] Check if var is a struct
 - [ ] Display Name and type of the var
 - [ ] Display the length of the var as byte ? 
-- [ ] Display all exported properties of the vae
+- [ ] Display all exported properties of the var
 
 ## Installation
 
 Install Debugo using the "go get" command:
-``go get go get github.com/sylver-john/Debugo/dump``
+``go get github.com/sylver-john/Debugo/dump``
 
 ## Usage
 
